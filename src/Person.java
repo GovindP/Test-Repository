@@ -11,6 +11,7 @@
 public class Person {
 
     private static Person person;
+    
 
     private Person() {
     }
@@ -19,6 +20,7 @@ public class Person {
         if (person == null) {
             person = new Person();
         }
+        System.out.println("This is demo for Singleton Pattern");
         return person;
 
     }
